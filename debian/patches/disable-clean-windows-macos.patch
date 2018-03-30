@@ -1,0 +1,31 @@
+--- a/build/build.xml
++++ b/build/build.xml
+@@ -348,13 +348,13 @@
+   <!-- Mac OS X      -->
+   <!-- - - - - - - - -->
+   <target name="macosx-clean" depends="subprojects-clean" description="Clean Mac OS X build">
+-    <delete dir="macosx/work" />
++    <!--<delete dir="macosx/work" />
+     <delete dir="macosx/working_dir" />
+     <delete dir="macosx/working.dmg" />
+     <delete file="macosx/arduino-*.dmg" />
+     <delete>
+       <fileset dir="macosx" includes="arduino-*macosx*.zip"/>
+-    </delete>
++    </delete>-->
+   </target>
+ 
+   <target name="macosx-checkos" unless="macosx">
+@@ -912,10 +912,10 @@
+ 
+   <target name="windows-clean" depends="subprojects-clean"
+ 	  description="Clean windows version">
+-    <delete dir="windows/work" />
++    <!--<delete dir="windows/work" />
+     <delete>
+       <fileset dir="windows" includes="arduino-*windows*.zip"/>
+-    </delete>
++    </delete>-->
+   </target>
+ 
+   <target name="windows-checkos" unless="windows">

@@ -1,3 +1,4 @@
+disable-clean-windows-macos.patch
 libastyle_is_packaged
 remove_update_warning.patch
 install_jar_links.patch
